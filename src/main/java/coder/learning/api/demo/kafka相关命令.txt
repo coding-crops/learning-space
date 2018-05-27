@@ -1,0 +1,26 @@
+下面是windows cmd操作kafka的常用命令
+
+进入kafka目录下，不用进入bin目录下
+
+--创建topic，如果只有一台broker，最后一个复本个数只能为1
+
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --create --topic delivery --partitions 16  --replication-factor 1
+
+-- 查看所有topic
+
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list﻿​
+
+-- 查看指定topic信息
+
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --describe --topic luoluo​
+
+-- 查看topic某分区偏移量最大（小）值
+
+.\bin\windows\kafka-run-class.bat kafka.tools.GetOffsetShell --topic luoluo --time -1 --broker-list localhost:9092 --partitions 0
+
+-- 删除topic，慎用，只会删除zookeeper中的元数据，消息文件须手动删除
+
+.\bin\windows\kafka-topics.bat kafka.admin.DeleteTopicCommand --zookeeper localhost:2181 --delete --topic linlin
+
+--查看消费者
+d:\java\kafka\bin\windows\kafka-console-consumer.bat --zookeeper localhost:2181 --from-beginning --topic zhisheng

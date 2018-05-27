@@ -1,0 +1,30 @@
+git init 
+git add .
+git commit -m "something"
+git remote add origin https:// git.coding.net/用户名/项目名.git
+git push origin master
+先stage后commit最后push
+
+
+
+
+
+
+
+
+
+{
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "workbench.colorTheme": "Monokai",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "gitlens.keymap": "alternate",
+    "workbench.editor.revealIfOpen": true,
+    "editor.renderWhitespace": "all",
+    "editor.cursorStyle": "line-thin",
+    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_05",
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "files.autoGuessEncoding": true,
+    "explorer.confirmDelete": false,
+    "workbench.statusBar.feedback.visible": false
+}
