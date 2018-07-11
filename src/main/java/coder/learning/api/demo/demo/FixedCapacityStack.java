@@ -8,6 +8,7 @@ public class FixedCapacityStack<Item> {
     private Item[] a;
     private int N;
     public FixedCapacityStack(int cap) {
+        // 创建泛型数组在java中是不允许的， 所以使用强制类型转换
         a = (Item[])new Object[cap];
     }
     public int size() {
